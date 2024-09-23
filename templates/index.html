@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quality Rate Prediction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quality Rate Prediction</h1>
+        <form action="/predict" method="POST">
+            <label for="TOTAL_LENGTH">TOTAL_LENGTH:</label>
+            <input type="text" id="TOTAL_LENGTH" name="TOTAL_LENGTH" required><br>
+
+            <label for="THEORY_LENGTH">THEORY_LENGTH:</label>
+            <input type="text" id="THEORY_LENGTH" name="THEORY_LENGTH" required><br>
+
+            <label for="WARPTOTAL">WARPTOTAL:</label>
+            <input type="text" id="WARPTOTAL" name="WARPTOTAL" required><br>
+
+            <label for="YA_RN_SPEC_DEN_IM">YA_RN_SPEC_DEN_IM:</label>
+            <input type="text" id="YA_RN_SPEC_DEN_IM" name="YA_RN_SPEC_DEN_IM" required><br>
+
+            <label for="YARN_SPEC_FIBERBASE">YARN_SPEC_FIBERBASE:</label>
+            <input type="text" id="YARN_SPEC_FIBERBASE" name="YARN_SPEC_FIBERBASE" required><br>
+
+            <label for="DEN_IM">DEN_IM:</label>
+            <input type="text" id="DEN_IM" name="DEN_IM" required><br>
+
+            <label for="FIBERBASE">FIBERBASE:</label>
+            <input type="text" id="FIBERBASE" name="FIBERBASE" required><br>
+
+            <label for="UNITWEIGHT">UNITWEIGHT:</label>
+            <input type="text" id="UNITWEIGHT" name="UNITWEIGHT" required><br>
+
+            <label for="GRANULARITY">GRANULARITY:</label>
+            <input type="text" id="GRANULARITY" name="GRANULARITY" required><br>
+
+            <label for="WARPLENGTH">WARPLENGTH:</label>
+            <input type="text" id="WARPLENGTH" name="WARPLENGTH" required><br>
+
+            <label for="WARPSTRIP">WARPSTRIP:</label>
+            <input type="text" id="WARPSTRIP" name="WARPSTRIP" required><br>
+
+            <label for="SIZINGLENGTH">SIZINGLENGTH:</label>
+            <input type="text" id="SIZINGLENGTH" name="SIZINGLENGTH" required><br>
+
+            <label for="WARPSPEED">WARPSPEED:</label>
+            <input type="text" id="WARPSPEED" name="WARPSPEED" required><br>
+
+            <label for="WARPPRES">WARPPRES:</label>
+            <input type="text" id="WARPPRES" name="WARPPRES" required><br>
+
+            <label for="SSTENSION">SSTENSION:</label>
+            <input type="text" id="SSTENSION" name="SSTENSION" required><br>
+
+            <label for="WARPTENSION">WARPTENSION:</label>
+            <input type="text" id="WARPTENSION" name="WARPTENSION" required><br>
+
+            <label for="HYDRATENSION">HYDRATENSION:</label>
+            <input type="text" id="HYDRATENSION" name="HYDRATENSION" required><br>
+
+            <label for="SIZINGSPEED">SIZINGSPEED:</label>
+            <input type="text" id="SIZINGSPEED" name="SIZINGSPEED" required><br>
+
+            <label for="SIZINGBPRES">SIZINGBPRES:</label>
+            <input type="text" id="SIZINGBPRES" name="SIZINGBPRES" required><br>
+
+            <label for="SIZINGATENSION">SIZINGATENSION:</label>
+            <input type="text" id="SIZINGATENSION" name="SIZINGATENSION" required><br>
+
+            <label for="SIZINGBTENSION">SIZINGBTENSION:</label>
+            <input type="text" id="SIZINGBTENSION" name="SIZINGBTENSION" required><br>
+
+            <label for="CONSISTENCY">CONSISTENCY:</label>
+            <input type="text" id="CONSISTENCY" name="CONSISTENCY" required><br>
+
+            <label for="DENSITY">DENSITY:</label>
+            <input type="text" id="DENSITY" name="DENSITY" required><br>
+
+            <label for="BEAMSPEED">BEAMSPEED:</label>
+            <input type="text" id="BEAMSPEED" name="BEAMSPEED" required><br>
+
+            <label for="BEAMATENSION">BEAMATENSION:</label>
+            <input type="text" id="BEAMATENSION" name="BEAMATENSION" required><br>
+
+            <label for="BEAMBTENSION">BEAMBTENSION:</label>
+            <input type="text" id="BEAMBTENSION" name="BEAMBTENSION" required><br>
+
+            <label for="BEAMTENSION">BEAMTENSION:</label>
+            <input type="text" id="BEAMTENSION" name="BEAMTENSION" required><br>
+
+            <label for="WEAVEBTENSION">WEAVEBTENSION:</label>
+            <input type="text" id="WEAVEBTENSION" name="WEAVEBTENSION" required><br>
+
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if prediction %}
+            <h2>Prediction: {{ prediction }}</h2>
+        {% endif %}
+
+        {% if error %}
+            <h2 style="color: red;">Error: {{ error }}</h2>
+        {% endif %}
+    </div>
+</body>
+</html>
+
