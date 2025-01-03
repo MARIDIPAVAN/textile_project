@@ -10,91 +10,125 @@
     <div class="container">
         <h1>Quality Rate Prediction</h1>
         <form action="/predict" method="POST">
-            <label for="TOTAL_LENGTH">TOTAL_LENGTH:</label>
-            <input type="text" id="TOTAL_LENGTH" name="TOTAL_LENGTH" required><br>
+            <table border="0" width="400" >
+                <tr>
+                    <td align="Left"><label for="TOTAL_LENGTH">TOTAL_LENGTH:</label></td>
+                    <td align="Right"><input type="text" id="TOTAL_LENGTH" name="TOTAL_LENGTH" required></td>
+                </tr>
+                <tr>
+                    <td align="Left"><label for="THEORY_LENGTH">THEORY_LENGTH:</label></td>
+                    <td align="Right"><input type="text" id="THEORY_LENGTH" name="THEORY_LENGTH" required></td>
+                </tr>
+                <tr>
+                    <td align="Left"><label for="WARPTOTAL">WARPTOTAL:</label></td>
+                    <td align="Right"><input type="text" id="WARPTOTAL" name="WARPTOTAL" required></td>
+                </tr>
+                <tr>
+                    <td align="Left"><label for="YA_RN_SPEC_DEN_IM">YA_RN_SPEC_DEN_IM:</label></td>
+                    <td align="Right"><input type="text" id="YA_RN_SPEC_DEN_IM" name="YA_RN_SPEC_DEN_IM" required></td>
+                </tr>
+                <tr>
+                    <td align="Left"><label for="YARN_SPEC_FIBERBASE">YARN_SPEC_FIBERBASE:</label></td>
+                    <td align="Right"><input type="text" id="YARN_SPEC_FIBERBASE" name="YARN_SPEC_FIBERBASE" required></td>
+                </tr>
+                <tr>
+                    <td align="Left"><label for="DEN_IM">DEN_IM:</label></td>
+                    <td align="Right"><input type="text" id="DEN_IM" name="DEN_IM" required></td>
+                </tr>
+                <tr>
+                    <td align="Left"><label for="FIBERBASE">FIBERBASE:</label></td>
+                    <td align="Right"><input type="text" id="FIBERBASE" name="FIBERBASE" required></td>
+                </tr>
+                <tr>
+                    <td align="Left"><label for="UNITWEIGHT">UNITWEIGHT:</label></td>
+                    <td align="Right"><input type="text" id="UNITWEIGHT" name="UNITWEIGHT" required></td>
+                </tr>
+                <tr>
+                    <td align="Left"><label for="GRANULARITY">GRANULARITY:</label></td>
+                    <td align="Right"><input type="text" id="GRANULARITY" name="GRANULARITY" required></td>
+                </tr>
+                <tr>
+                    <td align="Left"><label for="WARPLENGTH">WARPLENGTH:</label></td>
+                    <td align="Right"><input type="text" id="WARPLENGTH" name="WARPLENGTH" required></td>
+                </tr>
+                <tr>
+                    <td align="Left"><label for="WARPSTRIP">WARPSTRIP:</label></td>
+                    <td align="Right"><input type="text" id="WARPSTRIP" name="WARPSTRIP" required></td>
+                </tr>
+                <tr>
+                    <td><label for="SIZINGLENGTH">SIZINGLENGTH:</label></td>
+                    <td align="Right"><input type="text" id="SIZINGLENGTH" name="SIZINGLENGTH" required></td>
+                </tr>
+                <tr>
+                    <td><label for="WARPSPEED">WARPSPEED:</label></td>
+                    <td align="Right"><input type="text" id="WARPSPEED" name="WARPSPEED" required></td>
+                </tr>
+                <tr>
+                    <td><label for="WARPPRES">WARPPRES:</label></td>
+                    <td align="Right"><input type="text" id="WARPPRES" name="WARPPRES" required></td>
+                </tr>
+                <tr>
+                    <td><label for="SSTENSION">SSTENSION:</label></td>
+                    <td align="Right"><input type="text" id="SSTENSION" name="SSTENSION" required></td>
+                </tr>
+                <tr>
+                    <td><label for="WARPTENSION">WARPTENSION:</label></td>
+                    <td align="Right"><input type="text" id="WARPTENSION" name="WARPTENSION" required></td>
+                </tr>
+                <tr>
+                    <td><label for="HYDRATENSION">HYDRATENSION:</label></td>
+                    <td align="Right"><input type="text" id="HYDRATENSION" name="HYDRATENSION" required></td>
+                </tr>
+                <tr>
+                    <td><label for="SIZINGSPEED">SIZINGSPEED:</label></td>
+                    <td align="Right"><input type="text" id="SIZINGSPEED" name="SIZINGSPEED" required></td>
+                </tr>
+                <tr>
+                    <td><label for="SIZINGBPRES">SIZINGBPRES:</label></td>
+                    <td align="Right"><input type="text" id="SIZINGBPRES" name="SIZINGBPRES" required></td>
+                </tr>
+                <tr>
+                    <td><label for="SIZINGATENSION">SIZINGATENSION:</label></td>
+                    <td align="Right"><input type="text" id="SIZINGATENSION" name="SIZINGATENSION" required></td>
+                </tr>
+                <tr>
+                    <td><label for="SIZINGBTENSION">SIZINGBTENSION:</label></td>
+                    <td align="Right"><input type="text" id="SIZINGBTENSION" name="SIZINGBTENSION" required></td>
+                </tr>
+                <tr>
+                    <td><label for="CONSISTENCY">CONSISTENCY:</label></td>
+                    <td align="Right"><input type="text" id="CONSISTENCY" name="CONSISTENCY" required></td>
+                </tr>
+                <tr>
+                    <td><label for="DENSITY">DENSITY:</label></td>
+                    <td align="Right"><input type="text" id="DENSITY" name="DENSITY" required></td>
+                </tr>
+                <tr>
+                    <td><label for="BEAMSPEED">BEAMSPEED:</label></td>
+                    <td align="Right"><input type="text" id="BEAMSPEED" name="BEAMSPEED" required></td>
+                </tr>
+                <tr>
+                    <td><label for="BEAMATENSION">BEAMATENSION:</label></td>
+                    <td align="Right"><input type="text" id="BEAMATENSION" name="BEAMATENSION" required></td>
+                </tr>
+                <tr>
+                    <td><label for="BEAMBTENSION">BEAMBTENSION:</label></td>
+                    <td align="Right"><input type="text" id="BEAMBTENSION" name="BEAMBTENSION" required></td>
+                </tr>
+                <tr>
+                    <td><label for="BEAMTENSION">BEAMTENSION:</label></td>
+                    <td align="Right"><input type="text" id="BEAMTENSION" name="BEAMTENSION" required></td>
+                </tr>
+                <tr>
+                    <td><label for="WEAVEBTENSION">WEAVEBTENSION:</label></td>
+                    <td align="Right"><input type="text" id="WEAVEBTENSION" name="WEAVEBTENSION" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><br><button type="submit">Predict</button> </td>
+                </tr>
+            </table>
 
-            <label for="THEORY_LENGTH">THEORY_LENGTH:</label>
-            <input type="text" id="THEORY_LENGTH" name="THEORY_LENGTH" required><br>
-
-            <label for="WARPTOTAL">WARPTOTAL:</label>
-            <input type="text" id="WARPTOTAL" name="WARPTOTAL" required><br>
-
-            <label for="YA_RN_SPEC_DEN_IM">YA_RN_SPEC_DEN_IM:</label>
-            <input type="text" id="YA_RN_SPEC_DEN_IM" name="YA_RN_SPEC_DEN_IM" required><br>
-
-            <label for="YARN_SPEC_FIBERBASE">YARN_SPEC_FIBERBASE:</label>
-            <input type="text" id="YARN_SPEC_FIBERBASE" name="YARN_SPEC_FIBERBASE" required><br>
-
-            <label for="DEN_IM">DEN_IM:</label>
-            <input type="text" id="DEN_IM" name="DEN_IM" required><br>
-
-            <label for="FIBERBASE">FIBERBASE:</label>
-            <input type="text" id="FIBERBASE" name="FIBERBASE" required><br>
-
-            <label for="UNITWEIGHT">UNITWEIGHT:</label>
-            <input type="text" id="UNITWEIGHT" name="UNITWEIGHT" required><br>
-
-            <label for="GRANULARITY">GRANULARITY:</label>
-            <input type="text" id="GRANULARITY" name="GRANULARITY" required><br>
-
-            <label for="WARPLENGTH">WARPLENGTH:</label>
-            <input type="text" id="WARPLENGTH" name="WARPLENGTH" required><br>
-
-            <label for="WARPSTRIP">WARPSTRIP:</label>
-            <input type="text" id="WARPSTRIP" name="WARPSTRIP" required><br>
-
-            <label for="SIZINGLENGTH">SIZINGLENGTH:</label>
-            <input type="text" id="SIZINGLENGTH" name="SIZINGLENGTH" required><br>
-
-            <label for="WARPSPEED">WARPSPEED:</label>
-            <input type="text" id="WARPSPEED" name="WARPSPEED" required><br>
-
-            <label for="WARPPRES">WARPPRES:</label>
-            <input type="text" id="WARPPRES" name="WARPPRES" required><br>
-
-            <label for="SSTENSION">SSTENSION:</label>
-            <input type="text" id="SSTENSION" name="SSTENSION" required><br>
-
-            <label for="WARPTENSION">WARPTENSION:</label>
-            <input type="text" id="WARPTENSION" name="WARPTENSION" required><br>
-
-            <label for="HYDRATENSION">HYDRATENSION:</label>
-            <input type="text" id="HYDRATENSION" name="HYDRATENSION" required><br>
-
-            <label for="SIZINGSPEED">SIZINGSPEED:</label>
-            <input type="text" id="SIZINGSPEED" name="SIZINGSPEED" required><br>
-
-            <label for="SIZINGBPRES">SIZINGBPRES:</label>
-            <input type="text" id="SIZINGBPRES" name="SIZINGBPRES" required><br>
-
-            <label for="SIZINGATENSION">SIZINGATENSION:</label>
-            <input type="text" id="SIZINGATENSION" name="SIZINGATENSION" required><br>
-
-            <label for="SIZINGBTENSION">SIZINGBTENSION:</label>
-            <input type="text" id="SIZINGBTENSION" name="SIZINGBTENSION" required><br>
-
-            <label for="CONSISTENCY">CONSISTENCY:</label>
-            <input type="text" id="CONSISTENCY" name="CONSISTENCY" required><br>
-
-            <label for="DENSITY">DENSITY:</label>
-            <input type="text" id="DENSITY" name="DENSITY" required><br>
-
-            <label for="BEAMSPEED">BEAMSPEED:</label>
-            <input type="text" id="BEAMSPEED" name="BEAMSPEED" required><br>
-
-            <label for="BEAMATENSION">BEAMATENSION:</label>
-            <input type="text" id="BEAMATENSION" name="BEAMATENSION" required><br>
-
-            <label for="BEAMBTENSION">BEAMBTENSION:</label>
-            <input type="text" id="BEAMBTENSION" name="BEAMBTENSION" required><br>
-
-            <label for="BEAMTENSION">BEAMTENSION:</label>
-            <input type="text" id="BEAMTENSION" name="BEAMTENSION" required><br>
-
-            <label for="WEAVEBTENSION">WEAVEBTENSION:</label>
-            <input type="text" id="WEAVEBTENSION" name="WEAVEBTENSION" required><br>
-
-            <button type="submit">Predict</button>
+            
         </form>
 
         {% if prediction %}
